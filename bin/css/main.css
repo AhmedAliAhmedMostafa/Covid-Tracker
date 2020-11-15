@@ -97,20 +97,22 @@ body{
     background: url('../img/medium.jpg');
   }
   .summary{
-    width: 60%;
+    width: 80%;
     flex-flow:row nowrap;
     justify-content: space-between;
-    margin:6rem auto;
+    margin:4rem auto;
   }
   .summary>article{
-    width: 10rem;
-    height: 10rem;
+    width: 16rem;
+    height: 16rem;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
+    font-size: 2rem;
     
   }
   .summary__value{
-    justify-self: center;    
+    justify-self: center;   
+    font-size: 2rem; 
   }
 }
