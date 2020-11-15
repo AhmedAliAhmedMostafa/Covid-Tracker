@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@700&display=swap" rel="stylesheet"> 
   <title>Covid-Tracker</title>
 </head>
 <body>
+  <h1 class="main-header">Covid-Tracker</h1>
   <div class="search-box">
-    <input type="text" class="search-box__input" placeholder="Country Name e.g:Egypt">
-    <button class="search-box__button"> search</button>
+    <input type="text" class="search-box__input" placeholder="Country Name e.g:Egypt" value="">
+    <div class="results-container">
+    </div>
   </div>
   <h2 class="summary__region">
     Worldwide
@@ -32,5 +36,10 @@
     
   </section>
   <script src="./js/main.js"></script>
+  <script>
+    (function (){
+      document.querySelector('.search-box__input').value= '';
+    })();
+  </script>
 </body>
 </html>
